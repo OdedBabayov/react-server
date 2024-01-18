@@ -1,0 +1,134 @@
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.visualContainer{
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 50%;
+  grid-auto-flow: column;
+  border: 3px solid black;
+  background: gray;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  
+}
+/*
+ADI
+*/
+.circle-mix {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient( 90deg, blue 50%, green 50% ); 
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle-green {
+  height: 200px;
+  width: 200px;
+  background: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+.circle-blue{
+  height: 200px;
+  width: 200px;
+  background: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*
+Altitude
+*/
+
+
+.line{
+  position: absolute;
+  height: 2px;
+  background: black;
+  width: 100px;
+}
+
+.container{
+  position: relative;
+}
+
+.container-values{
+  display: grid;
+  grid-template-rows: auto;
+  background-color: rgb(20, 109, 177);
+  padding: 10px;
+  margin: 10px;
+  height: 200px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+HIS
+*/
+
+.circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: green;
+}
+
+.bottom{
+  position: absolute;
+  bottom:5px;
+}
+
+.left{
+  position: absolute;
+  left:5px;
+}
+
+.right{
+  position: absolute;
+  right:5px;
+}
+
+.top{
+  position: absolute;
+  top:5px;
+}
+
+.arrow {
+  position: absolute;
+  height: 20px;
+  background: black;
+  width: 4px;
+}
+
+.arrow::after {
+  
+  content: "";
+  width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+  position: absolute;
+  top: -10px; /*adjust the triangle to be at the top center of arrow boddy */
+  left: -8px; /*adjust the triangle to be at the top center of arrow boddy */
+  
+}
